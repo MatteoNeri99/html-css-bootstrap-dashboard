@@ -1,0 +1,17 @@
+body {
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+header>nav{
+    background-color: white;
+}
+
+ul li{
+    list-style:none;
+}
+
+.fa-bell{
+    color: orange;
+}
+
