@@ -63,7 +63,7 @@ aside{
 
 .my_container{
     width:calc(100vw - 50px);
-    height: 100vh;
+    height:calc(100% - 90px);
 }
 
 
