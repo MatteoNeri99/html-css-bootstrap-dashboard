@@ -20,6 +20,24 @@ ul li{
     color: orange;
 }
 
+.my_btn-offcanvas{
+    width: 50px;
+    height: 50px;
+}
+
+.my_plus{
+    width: 25px;
+    height: 25px;
+    padding-left: 7px;
+    padding-top: 2px;
+}
+
+.iscrizione{
+    background-color: #1b72e8;
+    width:calc(100vw - 50px);
+    height: 300px;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -27,6 +45,11 @@ a{
 
 .my_bg-color-grey{
     background-color: #e5e5e5;
+}
+
+.my_bg-dark-blue{
+    background-color:#165bba ;
+    font-size:.8rem;
 }
 
 aside{
@@ -41,4 +64,9 @@ aside{
         width: 150px;
     }
     
+    .iscrizione{
+        width:calc(100vw - 150px);
+        height: 150px;
+    }
 }
+
