@@ -36,9 +36,7 @@ ul li{
 .iscrizione{
     background-color: #1b72e8;
     width:calc(100vw - 50px);
-    height: 300px;
     margin-top:90px;
-    margin-left:50px;
 }
 
 a{
@@ -64,8 +62,11 @@ aside{
 }
 
 .my_container{
-    margin-left:50px
+    width:calc(100vw - 50px);
+    height: 100vh;
 }
+
+
 
 @media screen and (min-width:768px) {
     aside{
@@ -74,12 +75,13 @@ aside{
     
     .iscrizione{
         width:calc(100vw - 150px);
-        height: 150px;
-        margin-left:150px;
+        
     }
 
     .my_container{
-        margin-left: 150px
+        width:calc(100vw - 150px);
     }
+
+    
 }
 
