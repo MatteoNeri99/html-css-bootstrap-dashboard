@@ -6,6 +6,7 @@ body {
 header{
     height: 90px;
     padding: 1rem;
+    z-index: 1;
 }
 
 header>nav{
@@ -36,6 +37,8 @@ ul li{
     background-color: #1b72e8;
     width:calc(100vw - 50px);
     height: 300px;
+    margin-top:90px;
+    margin-left:50px;
 }
 
 a{
@@ -57,6 +60,7 @@ aside{
     height:calc(100vh - 90px);
     background-image: url(../img/sidebar-bg.png);
     background-color:#051e34 ;
+    margin-top: 90px;
 }
 
 @media screen and (min-width:768px) {
@@ -67,6 +71,7 @@ aside{
     .iscrizione{
         width:calc(100vw - 150px);
         height: 150px;
+        margin-left:150px;
     }
 }
 
