@@ -3,6 +3,10 @@ body {
     
 }
 
+main{
+    height: calc(100% - 90px);
+}
+
 header{
     height: 90px;
     padding: 1rem;
@@ -63,7 +67,13 @@ aside{
 
 .my_container{
     width:calc(100vw - 50px);
-    height:calc(100% - 90px);
+    height:100vh;
+}
+
+.my_stats a{
+    text-decoration: underline;
+    color:blue;
+
 }
 
 

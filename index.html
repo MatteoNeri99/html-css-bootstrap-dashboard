@@ -24,17 +24,17 @@
                 </form>
 
                 <ul class="d-flex align-text-top my-auto">
-                    <li class="d-none d-lg-inline-block mx-3 "><i class="fa-solid fa-bars"></i></li>
-                    <li class="d-none d-lg-inline-block me-3 "><i class="fa-solid fa-circle-question"></i></li>
-                    <li class="d-none d-lg-inline-block me-3"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    <li><i class="fa-solid fa-bell me-3"></i></li>
+                    <li class="d-none d-lg-inline-block mx-3 Dropdown-item"><i class="fa-solid fa-bars"></i></li>
+                    <li class="d-none d-lg-inline-block me-3 Dropdown-item"><i class="fa-solid fa-circle-question"></i></li>
+                    <li class=" me-3 Dropdown-item"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                    <li class="Dropdown-menu"><a href=""><i class="fa-solid fa-bell me-3"></i></a></li>
                 </ul>
             </div>
         </nav>
 
     </header>
 
-    <main class="d-flex">
+    <main class="d-flex ">
 
         <aside class="d-flex flex-column justify-content-beetween">
             <ul class="text-white fs-5 p-3">
@@ -70,7 +70,7 @@
 
         </aside>
 
-        <div class="my_container overflow-y-auto overflow-x-hidden">
+        <div class="my_container overflow-auto ">
 
             <section class="my_boolean-student conteiner-fluid iscrizione flex-column flex-md-row text-white d-flex justify-content-beetween align-self-start">
                 <div class="order-2 order-md-0 col-12 col-md-4 col-lg-6">
@@ -136,28 +136,86 @@
                                         todo
                                         </div>
                                         <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                                  <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                                  <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 in classe #75</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                                  <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                                </li>
+                                              </ul>
                                         
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-lg-8 mb-4 order-2 order-lg-3">
-                                    <div class="card ">
-                                        <div class="card-header text-uppercase">
-                                        f.a.q
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header text-uppercase bg-body-tertiary  p-2 border-bottom">
+                                            f.a.q
+                                          </h2>
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            Come aggiungere un nuovo studente?
+                                          </button>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                              <ps>Clicca sul + in alto sulla sezione blu".</ps>
+                                            </div>
+                                          </div>
                                         </div>
-                                        <div class="card-body">
-                                        
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                            <p>Clicca sulla campanella in alto</p>
+                                            </div>
+                                          </div>
                                         </div>
-                                    </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                              Posso usare questa dashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                              <p>certo che si!</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
 
-                                <div class="col-12 col-lg-4 mb-4 order-4">
-                                    <div class="card ">
-                                        <div class="card-header ">
-                                        </div>
-                                        <div class="card-body">
-                                        
+                                <div class="col-12 col-lg-4 mb-4 order-4 my_stats">
+                                    <div class="card p-3 fs-6">
+                                        <div class="card ">
+                                            <div class="card-body fs-6">
+                                                <img src="./img/stats.jpeg" alt="stast img" class="img-fluid">
+                                                <div>
+                                                    <h3 class="fs-4 mb-2">Utenti attivi</h3>
+                                                    <p class="fs-6 mb-2">Lista degli utenti in piattaforma nell'ultimo mese</p>
+                                                    <hr>
+                                                </div>
+                                                <p class="fs-6 mb-2">Gennaio: 1200</p>
+                                                <hr>
+                                                <p class="fs-6 mb-2">Febbraio: 800</p>
+                                                <hr>
+                                                <p class="fs-6 mb-2">Marzo: 1500</p>
+                                                <hr>
+                                                <a href="#" class="fs-6 mb-2">Visualizza report approfondito</a>
+                                            
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
